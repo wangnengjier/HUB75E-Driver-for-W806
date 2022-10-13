@@ -1,12 +1,13 @@
 /*
  * HUB75ELib.h
  *
- *  Created on: May 28, 2020
- *      Author: raeeskattali
+ *  Created on: Oct 13, 2022
+ *      Author: Wangnengjie
+*      Original Author: raeeskattali
  */
 
 
-#define HORIZONTAL_PIXELS			512
+#define HORIZONTAL_PIXELS			64
 #define VERTICAL_PIXELS				64
 #define PIXELS_COUNT				(HORIZONTAL_PIXELS * VERTICAL_PIXELS)
 #define PIXELS_COUNT_IN_BYTES 		(PIXELS_COUNT/8)
