@@ -1,40 +1,45 @@
 /*
  * HUB75E_Hal.c
  *
- *  Created on: May 28, 2020
- *      Author: raeeskattali
+ *  Created on: Oct 13, 2022
+  *      Author: Wangnengjie
+ *      Original Author: raeeskattali
  */
 #include "HUB75E_Hal.h"
-#include "stm32f2xx_hal.h"
-#include "dwt_delay.h"
+#include "wm_hal.h.h"
+//#include "dwt_delay.h"
 
 //IO Pins & Ports
-#define LED_MATRIX_B2_Pin GPIO_PIN_15
-#define LED_MATRIX_B2_GPIO_Port GPIOA
-#define LED_MATRIX_G2_Pin GPIO_PIN_3
-#define LED_MATRIX_G2_GPIO_Port GPIOB
-#define LED_MATRIX_B1_Pin GPIO_PIN_5
-#define LED_MATRIX_B1_GPIO_Port GPIOB
 #define LED_MATRIX_R1_Pin GPIO_PIN_7
 #define LED_MATRIX_R1_GPIO_Port GPIOB
-#define LED_MATRIX_R2_Pin GPIO_PIN_4
-#define LED_MATRIX_R2_GPIO_Port GPIOB
 #define LED_MATRIX_G1_Pin GPIO_PIN_6
 #define LED_MATRIX_G1_GPIO_Port GPIOB
-#define LED_MATRIX_LATCH_Pin GPIO_PIN_10
-#define LED_MATRIX_LATCH_GPIO_Port GPIOA
-#define LED_MATRIX_ADDRESS_LINE_C_Pin GPIO_PIN_2
-#define LED_MATRIX_ADDRESS_LINE_C_GPIO_Port GPIOC
-#define LED_MATRIX_CLK_Pin GPIO_PIN_9
-#define LED_MATRIX_CLK_GPIO_Port GPIOA
+#define LED_MATRIX_B1_Pin GPIO_PIN_5
+#define LED_MATRIX_B1_GPIO_Port GPIOB
+#define LED_MATRIX_R2_Pin GPIO_PIN_4
+#define LED_MATRIX_R2_GPIO_Port GPIOB
+#define LED_MATRIX_G2_Pin GPIO_PIN_3
+#define LED_MATRIX_G2_GPIO_Port GPIOB
+#define LED_MATRIX_B2_Pin GPIO_PIN_15
+#define LED_MATRIX_B2_GPIO_Port GPIOA
+
 #define LED_MATRIX_ADDRESS_LINE_A_Pin GPIO_PIN_5
 #define LED_MATRIX_ADDRESS_LINE_A_GPIO_Port GPIOC
 #define LED_MATRIX_ADDRESS_LINE_B_Pin GPIO_PIN_3
 #define LED_MATRIX_ADDRESS_LINE_B_GPIO_Port GPIOC
-#define LED_MATRIX_ADDRESS_LINE_E_Pin GPIO_PIN_6
-#define LED_MATRIX_ADDRESS_LINE_E_GPIO_Port GPIOA
+#define LED_MATRIX_ADDRESS_LINE_C_Pin GPIO_PIN_2
+#define LED_MATRIX_ADDRESS_LINE_C_GPIO_Port GPIOC
 #define LED_MATRIX_ADDRESS_LINE_D_Pin GPIO_PIN_5
 #define LED_MATRIX_ADDRESS_LINE_D_GPIO_Port GPIOA
+#define LED_MATRIX_ADDRESS_LINE_E_Pin GPIO_PIN_6
+#define LED_MATRIX_ADDRESS_LINE_E_GPIO_Port GPIOA
+
+#define LED_MATRIX_LATCH_Pin GPIO_PIN_10
+#define LED_MATRIX_LATCH_GPIO_Port GPIOA
+
+#define LED_MATRIX_CLK_Pin GPIO_PIN_9
+#define LED_MATRIX_CLK_GPIO_Port GPIOA
+
 #define LED_MATRIX_OE_Pin GPIO_PIN_7
 #define LED_MATRIX_OE_GPIO_Port GPIOA
 //
