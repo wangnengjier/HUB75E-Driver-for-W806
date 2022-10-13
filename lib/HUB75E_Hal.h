@@ -1,8 +1,9 @@
 /*
  * HUB75E_Hal.h
  *
- *  Created on: May 28, 2020
- *      Author: raeeskattali
+ *  Created on: Oct 13, 2022
+ *      Author：Wangnengjie
+ *	 Original Author: raeeskattali
  */
 
 #ifndef HUB75E_HAL_H_
