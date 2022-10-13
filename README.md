@@ -21,6 +21,7 @@ B-uilt-in 1MB Flash, 288KB RAM
 -1 7816 interface
 -15 Touch Sensors integrated
 
+Here's another guy post his chip board:   https://hackaday.io/page/11837-getting-started-with-w806-240mhz-32-bit-mcu
 
 HUB75E RGB LED Matrix Panel is popular in the life. W806 lib is similar like STM32 HAL lib. so we forked Driver from Thakaa's project in order to adapting for W806. 
 ```C
